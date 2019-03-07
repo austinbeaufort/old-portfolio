@@ -6,6 +6,10 @@
 
 /* global */
 
+.container {
+    font-family: 'Muli', sans-serif;
+}
+
 .global-container {
     position: relative;
     width: 100%;
@@ -207,6 +211,17 @@ header a:hover {
     color: white;
 }
 
+.flip ul {
+    margin-top: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.flip li {
+    margin-bottom: 10px;
+}
+
+
 /* scroll down buttons */
 .projectsButton {
     text-align: center;
@@ -267,6 +282,7 @@ header a:hover {
     margin-top: 10px;
     font-size: 100px;
     color: rgba(128, 0, 128, .5);
+    cursor: pointer;
 }
 
 .project .container h1 {
@@ -288,3 +304,163 @@ header a:hover {
 .project .container h2 {
     font-size: 50px;
 }
+
+.project .button {
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: pink;
+    transition: 0.2s ease;
+}
+
+.project .button:hover {
+    background: rgb(255, 238, 241);
+}
+
+.project .button1 {
+    border-radius: 0 40px 0 40px;
+}
+
+.project .button2 {
+
+    border-radius: 40px 0 40px 0;
+}
+
+
+
+
+
+/*-------------------------------- ABOUT PAGE ----------------------------- */
+
+.about-container {
+    background-image: url('./../img/lighthouse.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: "bio  bio ..."
+                        "... tools tools"
+                        "education education ...";
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.about-container section {
+    margin-bottom: 40px;
+}
+
+.about-container h3 {
+    font-size: 2.5em;
+}
+
+.about-container .bio {
+    text-align: center;
+    background: rgba(245, 222, 179, 0.7);
+    grid-area: bio;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 40px;
+}
+
+.bio-container p {
+    font-size: 1.7em;
+    line-height: 35px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.bio-container .bio-paras {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2%;
+}
+
+.bio-paras .border-para {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.about-container .tools {
+    background: rgba(255, 192, 203, 0.7);
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    grid-area: tools;
+}
+
+.tools-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tools .skills {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.tools ul {
+    list-style: none;
+}
+
+.tools li {
+    font-size: 1.7em;
+    line-height: 1.7em;
+}
+
+.tools h5 {
+    font-size: 2em;
+}
+.about-container .education {
+    background: rgba(144, 238, 144, 0.7);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1.5%;
+    padding-right: 3%;
+    grid-area: education;
+    text-align: center;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.education .certifications {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.education li {
+    font-size: 1.7em;
+    list-style: none;
+    padding-bottom: 1.4em;
+    padding-top: 0.3em;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.education h4 {
+    font-size: 2em;
+    padding-top: 0.3em;
+}
+
+.education h5 {
+    font-size: 1.2em;
+}
+
+.education p {
+    font-size: 1.3em;
+}
+
+
+
+
+/* ------------------------Contacts.html------------------------------------ */
