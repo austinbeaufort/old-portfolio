@@ -6,7 +6,15 @@
 
 /* global */
 
+.global-container {
+    position: relative;
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+}
 
+.home-container {
+    height: 100vh;
+}
 
 .container {
     text-align: center;
@@ -155,7 +163,7 @@ header a:hover {
 .cards .container {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5%;
+    margin-top: 3%;
 
 }
 
@@ -197,4 +205,86 @@ header a:hover {
     font-size: 1.3em;
     line-height: 160%;
     color: white;
+}
+
+/* scroll down buttons */
+.projectsButton {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 70px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-right: 3px solid purple;
+    border-left: 3px solid purple;
+    transition: 0.2s ease;
+}
+
+.projectsButton:hover {
+    background: rgba(128, 0, 128, 0.1);
+}
+
+
+.projectsButton i {
+    margin-top: 30px;
+    font-size: 100px;
+}
+
+/* projects */
+#project1 .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: lightgreen;
+}
+
+#project2 .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: lightsalmon;
+}
+
+#project3 .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: lightskyblue;
+}
+
+.project .container {
+    padding-top: 70px;
+}
+
+.project .fa-arrow-down, .project .fa-arrow-right {
+    margin-top: 10px;
+    font-size: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.project .fa-arrow-down:hover, .project .fa-arrow-right:hover {
+    margin-top: 10px;
+    font-size: 100px;
+    color: rgba(128, 0, 128, .5);
+}
+
+.project .container h1 {
+    font-size: 70px;
+    padding-bottom: 30px;
+}
+
+.project .container img {
+    margin-bottom: 20px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.project .container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.project .container h2 {
+    font-size: 50px;
 }
