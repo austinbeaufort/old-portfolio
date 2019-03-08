@@ -14,6 +14,7 @@
     position: relative;
     width: 100%;
     font-family: 'Muli', sans-serif;
+    margin-bottom: 500px;
 }
 
 .home-container {
@@ -24,12 +25,20 @@
     text-align: center;
 }
 
+.background-container {
+    background-image: url('./../img/water1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* header */
 header .container {
-    background: aqua;
     display: grid;
     grid-template-columns: 50% 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 header .logo {
@@ -43,7 +52,7 @@ header img {
 }
 
 header {
-    color: black;
+    color: white;
 }
 
 header ul {
@@ -66,12 +75,18 @@ header li {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bold;
     font-size: 25px;
 }
 
 header li:hover {
     background: gray;
+}
+
+header .about {
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
 }
 
 header a:hover {
@@ -193,6 +208,9 @@ header a:hover {
 .flip > .front h1 {
     font-size: 1.9em;
     padding-top: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .flip > .back h2 {
@@ -211,14 +229,43 @@ header a:hover {
     color: white;
 }
 
+.flip-button {
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s ease;
+    border: none;
+}
+
+.flip-button:hover {
+    background: white;
+}
+
+.flip-button:active {
+    background: gray;
+}
+
+
 .flip ul {
     margin-top: 20px;
     font-size: 20px;
     list-style: none;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
 }
 
 .flip li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.flip1 .text {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -464,3 +511,96 @@ header a:hover {
 
 
 /* ------------------------Contacts.html------------------------------------ */
+
+.all-contacts {
+    text-align: center;
+}
+
+.all-contacts .thanks {
+    margin-top: 60px;
+}
+
+.all-contacts .phone {
+    margin-top: 60px;
+}
+
+.thanks h1, .phone h1 {
+    font-size: 40px;
+}
+
+.all-contacts .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    width: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.contact-form {
+    border-radius: 10px;
+    background: orange;
+    border: none;
+}
+
+.contact-form h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    grid-column: 1 / 4;
+}
+
+.contact-form input, .contact-form textarea {
+    text-align: center;
+}
+
+input[type="text"] {
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 20px;
+    grid-column: 1 / 4;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+input[type="email"] {
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 20px;
+    grid-column: 1 / 4;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+input[type="subject"] {
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 20px;
+    grid-column: 1 / 4;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    font-size: 15px;
+    padding-top: 2px;
+    grid-column: 1 / 4;
+
+}
+
+.contact-form button {
+    grid-column: 2 / 3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+
+}
+

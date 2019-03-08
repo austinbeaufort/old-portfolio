@@ -10,22 +10,7 @@
     <title>Portfolio | Welcome</title>
 </head>
 <body>
-    <div class="global-container home-container">
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <h1> Austin Beaufort</h1>
-                </div>
-                <nav class="nav">
-                    <ul>
-                        <a class="active" href="#"><li class="home">Home</li></a>
-                        <a href="./about.html"><li class="about">About</li></a>
-                        <a href="./contacts.html"><li class="contacts">Contacts</li></a>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        
+    <div class="background-container">
         <section class="sidebar">
             <div class="icon-bar">
                 <a href="#" class="medium"><i class="fab fa-medium-m"></i></a>
@@ -36,109 +21,116 @@
             </div>
         </section>
         
-        <section class="cards">
-            <div class="container">
-                <div class="flip flip1">
-                    <div class="front" style="background-image:url(./../img/small_austin.jpg)">
-                        <h1 class="text">Why Hire Me?</h1>
-                    </div>
-                    <div class="back">
-                        <h2>Soft Skills</h2>
-                        <ul>
-                            <li>Communication</li>
-                            <li>Adapatability</li>
-                            <li>I am driven by learning and enjoy helping others.</li>
-                        </ul>
-                        <h2>Hard Skills</h2>
-                        <ul>
-                            <li>Detail Oriented</li>
-                            <li>Work Ethic</li>
-                            <li>Learn Quickly</li>
-                            <li>Love a Challenge</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flip flip2">
-                    <div class="front" style="background-image:url(./../img/small_austin.jpg)">
-                        <h1 class="text">Hi, I'm Austin!</h1>
-                    </div>
-                    <div class="back">
-                        <h2>Things I like:</h2>
-                        <ul>
-                            <li>✔ Clear Communication</li>
-                            <li>✔ Teamwork</li>
-                            <li>✔ Clean / Readable Code</li>
-                            <li>🌲 Hiking</li>
-                            <li>☕ Coffee ❤</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flip flip3">
-                    <div class="front" style="background-image:url(./../img/theJourney.jpg)">
-                        <h1 class="text">The Journey</h1>
-                    </div>
-                    <div class="back">
-                        <h2>Skillset:</h2>
-                        <ul>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="projectsButton project">
-            <h1>Portfolio Projects</h1>
-            <i class="initial-arrow fas fa-arrow-down"></i>
-        </section>
-    </div>
-
-    <div class="projects-container">
-        <section class="global-container project" id="project1">
+        <div class="global-container home-container">
+            <header>
                 <div class="container">
-                    <h1>Pokemon App</h1>
-                    <img src="./../img/project1.PNG" alt="">
-                    <p>Tools: HTML, CSS, JavaScript, pokeAPI</p>
-                    <p>Skills: Used XMLHttpRequest() to access an API, fetch data, and use the data in a meaningful way.</p>
+                    <div class="logo">
+                        <h1> Austin Beaufort</h1>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <a class="active" href="#"><li class="home">Home</li></a>
+                            <a href="./about.html"><li class="about">About</li></a>
+                            <a href="./contacts.html"><li class="contacts">Contacts</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+            <section class="cards">
+                <div class="container">
+                    <div class="flip flip1">
+                        <div class="front" style="background-image:url(./../img/stickman4.jpg)">
+                            <h1 class="text">Why Hire Me?</h1>
+                        </div>
+                        <div class="back">
+                            <h2>Soft Skills</h2>
+                            <ul>
+                                <li>Communication</li>
+                                <li>Adapatability</li>
+                                <li>Detail Oriented</li>
+                                <li>I am driven by learning and enjoy helping others.</li>
+                                <button class="flip-button">Learn More</button>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flip flip2">
+                        <div class="front" style="background-image:url(./../img/small_austin.jpg)">
+                            <h1 class="text">Hi, I'm Austin!</h1>
+                        </div>
+                        <div class="back">
+                            <h2>FrontEnd Developer.</h2>
+                            <h2>Things I like..</h2>
+                            <ul>
+                                <li>✔ Clear Communication</li>
+                                <li>✔ Teamwork</li>
+                                <li>✔ Clean / Readable Code</li>
+                                <li>🌲 Hiking</li>
+                                <li>☕ Coffee ❤</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flip flip3">
+                        <div class="front" style="background-image:url(./../img/theJourney.jpg)">
+                            <h1 class="text">The Journey</h1>
+                        </div>
+                        <div class="back">
+                            <h2>Skillset:</h2>
+                            <ul>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="projectsButton project">
+                <h1>Portfolio Projects</h1>
+                <i class="initial-arrow fas fa-arrow-down"></i>
+            </section>
+        </div>
+    
+        <div class="projects-container">
+            <section class="global-container project" id="project1">
+                    <div class="container">
+                        <h1>Pokemon App</h1>
+                        <img src="./../img/project1.PNG" alt="">
+                        <p>Tools: HTML, CSS, JavaScript, pokeAPI</p>
+                        <p>Skills: Used XMLHttpRequest() to access an API, fetch data, and use the data in a meaningful way.</p>
+                        <button class="button button1">View the App</button>
+                        <button class="button button2">Github Code!</button>
+                        <h2>Next Project</h2>
+                        <i class="arrow1 fas fa-arrow-down"></i>
+                    </div>
+                </section>
+            
+            <section class="global-container project" id="project2">
+                <div class="container">
+                    <h1>Traffic Light App</h1>
+                    <img src="./../img/project2.PNG" alt="">
+                    <p>Tools: FlexBox, jQuery, HTML, CSS, Media Queries</p>
+                    <p>Skills: Use of setTimeout() browser API. CSS Flexbox Layout used for lights. jQuery for toggling classes and onload(). Responsive Design.</p>
                     <button class="button button1">View the App</button>
                     <button class="button button2">Github Code!</button>
                     <h2>Next Project</h2>
-                    <i class="arrow1 fas fa-arrow-down"></i>
+                    <i class="arrow2 fas fa-arrow-down"></i>
                 </div>
             </section>
-        
-        <section class="global-container project" id="project2">
-            <div class="container">
-                <h1>Traffic Light App</h1>
-                <img src="./../img/project2.PNG" alt="">
-                <p>Tools: FlexBox, jQuery, HTML, CSS, Media Queries</p>
-                <p>Skills: Use of setTimeout() browser API. CSS Flexbox Layout used for lights. jQuery for toggling classes and onload(). Responsive Design.</p>
-                <button class="button button1">View the App</button>
-                <button class="button button2">Github Code!</button>
-                <h2>Next Project</h2>
-                <i class="arrow2 fas fa-arrow-down"></i>
-            </div>
-        </section>
-
-        <section class="global-container project" id="project3">
-            <div class="container">
-                <h1>Elementary School App</h1>
-                <img src="./../img/project3.PNG" alt="">
-                <p>Tools: Web Audio API, CSS Grid, media Queries, JavaScript</p>
-                <p>Skills: Use of html5 audio tags and the browser's Web Audio API combined with CSS Grid for layout to bring this children's app to life.</p>
-                <button class="button button1">View the App</button>
-                <button class="button button2">Github Code!</button>
-                <h2>Contact Me!</h2>
-                <a href="./contacts.html"><i class="arrow3 fas fa-arrow-right"></i></a>
-            </div>
-        </section>
+    
+            <section class="global-container project" id="project3">
+                <div class="container">
+                    <h1>Elementary School App</h1>
+                    <img src="./../img/project3.PNG" alt="">
+                    <p>Tools: Web Audio API, CSS Grid, media Queries, JavaScript</p>
+                    <p>Skills: Use of html5 audio tags and the browser's Web Audio API combined with CSS Grid for layout to bring this children's app to life.</p>
+                    <button class="button button1">View the App</button>
+                    <button class="button button2">Github Code!</button>
+                    <h2>Contact Me!</h2>
+                    <a href="./contacts.html"><i class="arrow3 fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+        </div> 
     </div>
-
-
-
-
-
-
 
     <script src="app.js"></script>
 </body>
