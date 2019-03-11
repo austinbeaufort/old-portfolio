@@ -178,11 +178,11 @@ header a:hover {
     transform: rotateY(-180deg);
 }
 
-.flip:hover > .front {
+.flip:hover > .front, .flip-effect{
     transform: rotateY(180deg);
 }
 
-.flip:hover > .back {
+.flip:hover > .back, .flip-effect {
     opacity: 1;
     transform: rotateY(0deg);
 }
