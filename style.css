@@ -931,6 +931,6 @@ input[type="subject"] {
         background-image: url('./img/water1.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
     }
   }
