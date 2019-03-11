@@ -33,5 +33,6 @@ arrow2.addEventListener('click', function() {
 
 
 
-// scrollTo(document.body, project1.offSetTop, 600);
+
+
 
