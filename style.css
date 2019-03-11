@@ -638,7 +638,7 @@ input[type="subject"] {
     font-size: 15px;
     padding-top: 2px;
     grid-column: 1 / 4;
-
+    font-family: 'Muli', sans-serif;
 }
 
 .contact-form button {
@@ -689,7 +689,7 @@ input[type="subject"] {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     /*------------------------ Home Page ------------------------------------------*/
   
   /* flip cards */
@@ -713,10 +713,6 @@ input[type="subject"] {
     .flip-button {
         margin-top: 10px;
     }
-
-    .cards .flip-button2 {
-        padding-top: 80px;
-    }
     
     .flip ul {
         margin-top: 10px;
@@ -730,25 +726,116 @@ input[type="subject"] {
         padding-right: 3px;
     }
 
+    .projectsButton h1, .projectsButton .fa-arrow-down {
+        font-size: 60px;
+        margin-top: -10px;
+    }
+
     /* icon bar */   
     .icon-bar {
-        top: 50%;
+        top: 60%;
     }
+
+    /* projects */
+
+    .project .container {
+        padding-top: 20px;
+    }
+    
+    .project .fa-arrow-down, .project .fa-arrow-right {
+        margin-top: 10px;
+        font-size: 60px;
+    }
+    
+    .project .fa-arrow-down:hover, .project .fa-arrow-right:hover {
+        margin-top: 10px;
+        font-size: 70px;
+    }
+    
+    .project .container h1 {
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .project .container img {
+        margin-bottom: 15px;
+        width: 400px;
+    }
+    
+    .project .container p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .project .container h2 {
+        font-size: 40px;
+    }
+    
+
     
     /*-------------------------------- ABOUT PAGE ----------------------------- */
 
-    .about-container {
-        background-image: url('./img/lighthouse.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
-
     .about-container section {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
+    }
+    
+    .about-container h3 {
+        font-size: 2em;
+    }
+    
+    .bio-container p {
+        font-size: 1.4em;
+    }
+    
+    .tools li {
+        font-size: 1.4em;
+        line-height: 1.7em;
+    }
+    
+    .tools h5 {
+        font-size: 2em;
+    }
+    
+    .education li {
+        font-size: 1.4em;
+    }
+    
+    .education h4 {
+        font-size: 1.5em;
+    }
+    
+    .education h5 {
+        font-size: .9em;
+    }
+    
+    .education p {
+        font-size: 1em;
+    }
+    
+/*---------------------------- Contacts Page ------------------------*/
+
+    .all-contacts .thanks {
+        margin-top: 20px;
     }
 
+    .all-contacts .phone {
+        margin-top: 20px;
+    }
+
+    .thanks h1, .phone h1 {
+        font-size: 25px;
+    }
+
+    .all-contacts .contact-form {
+        margin-top: 40px;
+    }
+
+    .contact-form h1 {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+    .contact-form textarea {
+        height: 80px;
+    }
 }
