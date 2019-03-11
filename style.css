@@ -930,6 +930,10 @@ input[type="subject"] {
   and (orientation: portrait) {
     .background-container {
         background-image: url('./img/water1.jpg');
+        background-attachment: none;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
   }
 
