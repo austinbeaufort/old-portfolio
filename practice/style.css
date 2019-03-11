@@ -18,7 +18,7 @@
 
 
 
-.home-container {
+.home-container, #project1, #project2 {
     height: 100vh;
 }
 
@@ -99,6 +99,10 @@ header a:hover {
 }
 
 /* icon-bar */
+
+.contacts-container .icon-bar {
+    top: 70%;
+}
 
 .icon-bar {
     position: fixed;
@@ -540,7 +544,8 @@ header a:hover {
 .contacts-container {
     font-family: 'Muli', sans-serif;
     background-image: url('./../img/waves5.jpg');
-    height: 1000px;
+    min-height: 100vh;
+    max-height: 1400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -548,11 +553,11 @@ header a:hover {
 }
 
 .all-contacts .thanks {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .all-contacts .phone {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .thanks h1, .phone h1 {
@@ -649,3 +654,437 @@ input[type="subject"] {
     border-bottom-right-radius: 30px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1500px) {
+    .container {
+        font-family: 'Muli', sans-serif;
+    }
+    
+    .global-container {
+        position: relative;
+        width: 100%;
+        font-family: 'Muli', sans-serif;
+    }
+    
+    
+    
+    .home-container, #project1, #project2 {
+        height: 100vh;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    .background-container {
+        background-image: url('./../img/water1.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /* header */
+    header .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+    
+    header .logo {
+        padding-top: 10px;
+        text-align: left;
+        margin-left: 65px;
+    }
+    
+    header img {
+        width: 50px;
+    }
+    
+    header {
+        color: white;
+    }
+    
+    header ul {
+        padding-top: 5px;
+        list-style: none;
+        display: flex;
+        float: right;
+        line-height: auto;
+        margin-top: -10px;
+    }
+    
+    header li {
+        padding-top: 10px;
+        line-height: 50px;
+        transition: .3s ease;
+        font-size: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    header li:hover {
+        background: gray;
+    }
+    
+    header .about {
+        border-left: 0.5px solid white;
+        border-right: 0.5px solid white;
+    }
+    
+    header a:hover {
+        color: white;
+    }
+    
+    .contacts {
+        margin-right: 40px;
+    }
+    
+    /* icon-bar */
+    
+    .contacts-container .icon-bar {
+        top: 70%;
+    }
+    
+    .icon-bar {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    
+    .icon-bar i {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .icon-bar i:hover {
+        background-color: black;
+    }
+    
+    .icon-bar .fa-medium-m {
+        background: darkslategray;
+    }
+    
+    .icon-bar .fa-twitter {
+        background: cornflowerblue;
+    }
+    
+    .icon-bar .fa-linkedin {
+        background: darkcyan;
+    }
+    
+    .icon-bar .fa-github {
+        background: purple;
+    }
+    
+    .icon-bar .fa-youtube {
+        background: rgb(199, 0, 0);
+    }
+    
+    .icon-bar .fa-codepen {
+        background: rgb(62, 124, 160);
+    }
+    
+    /* flipcards */
+    
+    /*making the cards flip*/
+    .flip {
+        position: relative;
+    }
+    
+    .flip > .front, .flip > .back {
+        display: block;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition-duration: 0.5s;
+        transition-property: transform, opacity;
+    }
+    
+    .flip > .front {
+        transform: rotateY(0deg);
+    }
+    
+    .flip > .back {
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: rotateY(-180deg);
+    }
+    
+    .flip:hover > .front {
+        transform: rotateY(180deg);
+    }
+    
+    .flip:hover > .back {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    
+    /*customizing flip-cards*/
+    .cards .container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3%;
+    
+    }
+    
+    .flip {
+        position: relative;
+        display: inline-block;
+    
+        margin-bottom: 1em;
+        width: 300px;
+    }
+    
+    .flip > .front, .flip > .back {
+        display: block;
+        color: white;
+        width: inherit;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 400px;
+        background: #313131;
+        border-radius: 10px;
+    }
+    
+    .flip > .front h1 {
+        font-size: 1.9em;
+        padding-top: 5px;
+        background: rgba(0, 0, 0, 0.5);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .flip > .back h2 {
+        font-size: 1.7em;
+        padding-top: 5px;
+    }
+    
+    
+    .flip > .front p, .flip > .back p {
+        font-size: 1.3em;
+        line-height: 160%;
+        color: white;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .flip-button {
+        margin-top: 20px;
+        padding: 10px 20px 10px 20px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        width: 150px;
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+        transition: 0.2s ease;
+        border: none;
+    }
+    
+    .flip-button:hover {
+        background: white;
+    }
+    
+    .flip-button:active {
+        background: gray;
+    }
+    
+    
+    .flip ul {
+        margin-top: 20px;
+        font-size: 20px;
+        list-style: none;
+        padding-left: 1.5px;
+        padding-right: 1.5px;
+    }
+    
+    .flip li {
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    
+    .flip1 .text {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    /* scroll down buttons */
+    .projectsButton {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 70px;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-right: 3px solid purple;
+        border-left: 3px solid purple;
+        transition: 0.2s ease;
+    }
+    
+    .projectsButton:hover {
+        background: rgba(128, 0, 128, 0.1);
+    }
+    
+    
+    .projectsButton i {
+        margin-top: 30px;
+        font-size: 60px;
+        color: black;
+    }
+    
+    .projectsButton h1 {
+        color: black;
+        font-size: 80px;
+    }
+    
+    /* projects */
+    #project1 .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: rgba(245, 222, 179, 0.5);
+    }
+    
+    #project2 .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: rgba(123, 196, 224, 0.5);;
+    }
+    
+    #project3 .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: rgba(245, 222, 179, 0.5);
+    }
+    
+    .project .container {
+        padding-top: 70px;
+    }
+    
+    .project .fa-arrow-down, .project .fa-arrow-right {
+        margin-top: 10px;
+        font-size: 100px;
+        width: 100px;
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+    
+    .project .fa-arrow-down:hover, .project .fa-arrow-right:hover {
+        margin-top: 10px;
+        font-size: 100px;
+        color: rgba(128, 0, 128, .5);
+        cursor: pointer;
+    }
+    
+    .project .container h1 {
+        font-size: 70px;
+        padding-bottom: 30px;
+    }
+    
+    .project .container img {
+        margin-bottom: 20px;
+        width: 500px;
+        border-radius: 10px;
+    }
+    
+    .project .container p {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .project .container h2 {
+        font-size: 50px;
+    }
+    
+    .project .button {
+        padding: 10px 20px 10px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(167, 220, 255);
+        transition: 0.2s ease;
+        outline: none;
+    }
+    
+    #project2 .button {
+        background: wheat;
+    }
+    
+    #project2 .button:hover {
+        background: white;
+    }
+    
+    .project .button:hover {
+        background: rgb(255, 238, 241);
+    }
+    
+    .project .button1 {
+        border-radius: 0 40px 0 40px;
+    }
+    
+    .project .button2 {
+    
+        border-radius: 40px 0 40px 0;
+    }    
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    /*-------------------------------- ABOUT PAGE ----------------------------- */
+
+    .about-container {
+        background-image: url('./../img/lighthouse.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-container section {
+        margin-bottom: 80px;
+    }
+}
