@@ -929,7 +929,7 @@ input[type="subject"] {
   and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: portrait) {
     .background-container {
-        background-image: url('./img/water1.jpg');
+        background-image: url('./img/waves4.jpg');
         background-attachment: none;
         background-position: top;
         background-repeat: no-repeat;
