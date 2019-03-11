@@ -678,17 +678,6 @@ input[type="subject"] {
 
 
 
-
-
-@media (max-width: 1500px) {
-
-}
-
-
-
-
-
-
 @media (max-width: 1400px) {
     /*------------------------ Home Page ------------------------------------------*/
   
@@ -724,6 +713,10 @@ input[type="subject"] {
         font-size: 20px;
         padding-left: 3px;
         padding-right: 3px;
+    }
+
+    .flip .front h1 {
+        font-size: 26px;
     }
 
     .projectsButton h1, .projectsButton .fa-arrow-down {
@@ -839,3 +832,105 @@ input[type="subject"] {
         height: 80px;
     }
 }
+
+@media (max-width: 1200px) {
+    /*---------------------- home page -----------------------*/
+    /* nav bar */
+    header li {
+        padding-top: 6px;
+        line-height: 40px;
+        transition: .3s ease;
+        font-size: 22px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-top: -3px;
+        margin-left: -20px;
+    }
+    
+    header ul {
+        margin-right: -20px;
+    }
+    /* flip cards */
+      .flip {
+        width: 230px;
+    }
+
+    .flip .front h1 {
+        font-size: 22px;
+    }
+    
+    .flip > .front, .flip > .back {
+        height: 307px;
+    }
+
+    .flip > .back h2 {
+        font-size: 1.3em;
+    }
+    
+    .flip > .front p, .flip > .back p {
+        font-size: 1.04em;
+    }
+    /* projects */
+
+    .project .container {
+        padding-top: 15px;
+    }
+    
+    .project .fa-arrow-down, .project .fa-arrow-right {
+        margin-top: 5px;
+        font-size: 50px;
+    }
+    
+    .project .fa-arrow-down:hover, .project .fa-arrow-right:hover {
+        margin-top: 5px;
+        font-size: 60px;
+    }
+    
+    .project .container h1 {
+        font-size: 35px;
+        padding-bottom: 25px;
+    }
+    
+    .project .container img {
+        margin-bottom: 10px;
+        width: 400px;
+    }
+    
+    .project .container p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .project .container h2 {
+        font-size: 35px;
+    }   
+}
+
+
+
+
+
+/* -------------- ***** Ipad Section Only ****** ------- */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .background-container {
+        background-image: url('./img/water1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
