@@ -33,6 +33,17 @@ arrow2.addEventListener('click', function() {
 
 
 
+initialArrow.addEventListener('touchstart', function() {
+    scrollPage(document.documentElement, project1.offsetTop, 600);
+});
+
+arrow1.addEventListener('touchstart', function() {
+    scrollPage(document.documentElement, project2.offsetTop, 600);
+});
+
+arrow2.addEventListener('touchstart', function() {
+    scrollPage(document.documentElement, project3.offsetTop, 600);
+});
 
 
 
