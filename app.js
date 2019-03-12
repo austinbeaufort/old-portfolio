@@ -29,7 +29,7 @@ let flip3 = document.querySelector('.flip3');
 
 function touch(event) {
     event.preventDefault();
-    this.classList.toggle('hover-effect');
+    this.toggleClass('hover-effect');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
