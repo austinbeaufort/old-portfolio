@@ -170,7 +170,7 @@ header a:hover {
 
 .flip > .back {
     position: absolute;
-    opacity: 0;
+    opacity: 0; 
     top: 0px;
     left: 0px;
     width: 100%;
@@ -918,8 +918,26 @@ input[type="subject"] {
     }   
 }
 
-@media (max-width: 900px) {
-    
+@media (max-width: 717px) {
+    .background-container {
+        background-image: url('./img/water.jpg');
+    }
+    .flip > .front, .flip > .back {
+        height: 307px;
+    }
+
+    .flip-button {
+        background:white;
+    }
+
+    .contact-form button {
+        background: rgb(228, 228, 228); 
+    }
+
+    .flip1, .flip3 {
+        display: none;
+    }
+
 }
 
 
@@ -964,7 +982,7 @@ input[type="subject"] {
     }
 
     .projectsButton h1 {
-        font-size: 20px;
+        font-size: 80px;
     }
 
     .contact-form button {

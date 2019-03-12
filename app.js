@@ -18,7 +18,6 @@ let arrow2 = document.querySelector('.arrow2');
 let project2 = document.querySelector('#project2');
 let project3 = document.querySelector('#project3');
 
-/* ---- MOBILE FUNCTIONALITY ----- */
 
 initialArrow.addEventListener('click', function() {
     scrollPage(document.documentElement, project1.offsetTop, 600);
@@ -44,7 +43,7 @@ let flip3 = document.querySelector('.flip3');
 
 function touch(event) {
     event.preventDefault();
-    this.toggleClass('hover-effect');
+    this.classList.toggle('hover-effect');
 }
 
 
@@ -73,6 +72,10 @@ if (isIpad) {
     flip1Front.innerHTML = "Why Hire Me? <br>👆 to Learn More! -->";
     flip2Front.innerHTML = "Hi, I'm Austin <br> 👆 to Learn More! -->";
     flip3Front.innerHTML = "The Journey <br> 👆 to Learn More! -->";
+} else {
+    flip1Front.innerHTML = "Why Hire Me?";
+    flip2Front.innerHTML = "Hi, I'm Austin";
+    flip3Front.innerHTML = "The Journey";
 }
 
 
