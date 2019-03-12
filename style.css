@@ -178,11 +178,11 @@ header a:hover {
     transform: rotateY(-180deg);
 }
 
-.flip:hover > .front, .flip-effect{
+.flip:hover > .front, .hover-effect {
     transform: rotateY(180deg);
 }
 
-.flip:hover > .back, .flip-effect {
+.flip:hover > .back, .hover-effect {
     opacity: 1;
     transform: rotateY(0deg);
 }
@@ -929,8 +929,10 @@ input[type="subject"] {
   and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: portrait) {
     .background-container {
-        background-image: url('./img/waves6.jpg');
+        background-image: url('./img/waves7.jpg');
     }
+
+
   }
 
   @media only screen 
