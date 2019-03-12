@@ -935,21 +935,33 @@ input[type="subject"] {
     .flip {
         width: 230px;
     }
-
-    .flip .front h1 {
-        font-size: 22px;
-    }
     
     .flip > .front, .flip > .back {
         height: 307px;
     }
 
     .flip > .back h2 {
-        font-size: 1.3em;
+        font-size: 1.1em;
+    }
+
+    .flip li {
+        font-size: 15px;
     }
     
     .flip > .front p, .flip > .back p {
-        font-size: 1.04em;
+        font-size: 1em;
+    }
+
+    .flip-button {
+        background-white;
+    }
+
+    .projectsButton {
+        margin-top: 80px;
+    }
+
+    .projectsButton h1 {
+        font-size: 80px;
     }
   }
 
@@ -979,5 +991,9 @@ input[type="subject"] {
     
     .flip > .front p, .flip > .back p {
         font-size: 1em;
+    }
+
+    .flip-button {
+        background-white;
     }
 }
