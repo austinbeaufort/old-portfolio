@@ -932,7 +932,25 @@ input[type="subject"] {
         background-image: url('./img/water.jpg');
     }
 
+    .flip {
+        width: 230px;
+    }
 
+    .flip .front h1 {
+        font-size: 22px;
+    }
+    
+    .flip > .front, .flip > .back {
+        height: 307px;
+    }
+
+    .flip > .back h2 {
+        font-size: 1.3em;
+    }
+    
+    .flip > .front p, .flip > .back p {
+        font-size: 1.04em;
+    }
   }
 
   @media only screen 
@@ -942,6 +960,24 @@ input[type="subject"] {
   and (orientation: landscape) {
     .background-container {
         background-image: url('./img/waves.jpg');
+    }
+    .flip {
+        width: 230px;
+    }
+    
+    .flip > .front, .flip > .back {
+        height: 307px;
+    }
 
+    .flip > .back h2 {
+        font-size: 1.1em;
+    }
+
+    .flip li {
+        font-size: 15px;
+    }
+    
+    .flip > .front p, .flip > .back p {
+        font-size: 1em;
     }
 }

@@ -57,6 +57,17 @@ arrow2.addEventListener('click', function() {
 });
 
 
+/* iPads Only */
+var isIpad = navigator.userAgent.indexOf("iPad") != -1 ;
+let flip1Front = document.querySelector('.flip1-front .text');
+let flip2Front = document.querySelector('.flip2-front .text');
+let flip3Front = document.querySelector('.flip3-front .text');
+
+if (isIpad) {
+    flip1Front.innerHTML = "Why Hire Me? <br>👆 to Learn More! -->";
+    flip2Front.innerHTML = "Hi, I'm Austin <br> 👆 to Learn More! -->";
+    flip3Front.innerHTML = "The Journey <br> 👆 to Learn More! -->";
+}
 
 
 
