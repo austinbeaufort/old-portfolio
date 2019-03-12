@@ -22,24 +22,24 @@ let project3 = document.querySelector('#project3');
 
 /* ----------FLIPCARDS ------------ */
 
-// let flip1 = document.querySelector('.flip1');
-// let flip2 = document.querySelector('.flip2');
-// let flip3 = document.querySelector('.flip3');
+let flip1 = document.querySelector('.flip1');
+let flip2 = document.querySelector('.flip2');
+let flip3 = document.querySelector('.flip3');
 
 
-// function touch(event) {
-//     event.preventDefault();
-//     this.toggleClass('hover-effect');
-// }
+function touch(event) {
+    event.preventDefault();
+    this.classList.toggle('hover-effect');
+}
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     flip1.addEventListener('touchstart', touch);
-//     flip1.addEventListener('touchend', touch);
-//     flip2.addEventListener('touchstart', touch);
-//     flip2.addEventListener('touchend', touch);
-//     flip3.addEventListener('touchstart', touch);
-//     flip3.addEventListener('touchend', touch);
-// });
+document.addEventListener('DOMContentLoaded', function() {
+    flip1.addEventListener('touchstart', touch);
+    flip1.addEventListener('touchend', touch);
+    flip2.addEventListener('touchstart', touch);
+    flip2.addEventListener('touchend', touch);
+    flip3.addEventListener('touchstart', touch);
+    flip3.addEventListener('touchend', touch);
+});
 
 
 
