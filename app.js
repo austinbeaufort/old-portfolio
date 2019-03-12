@@ -28,7 +28,6 @@ initialArrow.addEventListener('click', function() {
 // });
 
 initialArrow.addEventListener('touchend', function() {
-    event.preventDefault();
     scrollPage(document.documentElement, project1.offsetTop, 600);
 });
 
@@ -41,7 +40,6 @@ arrow1.addEventListener('click', function() {
 // });
 
 arrow1.addEventListener('touchend', function() {
-    event.preventDefault();
     scrollPage(document.documentElement, project2.offsetTop, 600);
 });
 
@@ -54,7 +52,6 @@ arrow2.addEventListener('click', function() {
 // });
 
 arrow2.addEventListener('touchend', function() {
-    event.preventDefault();
     scrollPage(document.documentElement, project3.offsetTop, 600);
 });
 
