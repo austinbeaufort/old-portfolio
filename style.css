@@ -953,7 +953,7 @@ input[type="subject"] {
     }
 
     .flip-button {
-        background-white;
+        background:white;
     }
 
     .projectsButton {
@@ -994,6 +994,6 @@ input[type="subject"] {
     }
 
     .flip-button {
-        background-white;
+        background:white;
     }
 }

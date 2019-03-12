@@ -1,15 +1,27 @@
 
-    function scrollPage(element, to, duration) {
-        if (duration <= 0) return;
-        let difference = to - element.scrollTop;
-        let perTick = difference / duration * 10;
+function scrollPage(element, to, duration) {
+    if (duration <= 0) return;
+    let difference = to - element.scrollTop;
+    let perTick = difference / duration * 10;
 
-        setTimeout(() => {
-            element.scrollTop = element.scrollTop + perTick;
-            if(element.scrollTop === to) return;
-            scrollPage(element, to, duration - 10);
-        }, 10);
-    }
+    setTimeout(() => {
+        element.scrollTop = element.scrollTop + perTick;
+        if(element.scrollTop === to) return;
+        scrollPage(element, to, duration - 10);
+    }, 10);
+}
+
+initialArrow.addEventListener('click', function() {
+    scrollPage(document.documentElement, project1.offsetTop, 600);
+});
+
+arrow1.addEventListener('click', function() {
+    scrollPage(document.documentElement, project2.offsetTop, 600);
+});
+
+arrow2.addEventListener('click', function() {
+    scrollPage(document.documentElement, project3.offsetTop, 600);
+});
 
 
 let initialArrow = document.querySelector('.initial-arrow');
@@ -39,22 +51,32 @@ document.addEventListener('DOMContentLoaded', function() {
     flip2.addEventListener('touchend', touch);
     flip3.addEventListener('touchstart', touch);
     flip3.addEventListener('touchend', touch);
+    initialArrow.addEventListener('touchstart', function() {
+        scrollPage(document.documentElement, project1.offsetTop, 600);
+    });
+    initialArrow.addEventListener('touchend', function() {
+        scrollPage(document.documentElement, project1.offsetTop, 600);
+    });
+    
+    arrow1.addEventListener('touchstart', function() {
+        scrollPage(document.documentElement, project2.offsetTop, 600);
+    });
+    arrow1.addEventListener('touchend', function() {
+        scrollPage(document.documentElement, project2.offsetTop, 600);
+    });
+    
+    arrow2.addEventListener('touchstart', function() {
+        scrollPage(document.documentElement, project3.offsetTop, 600);
+    });
+    arrow2.addEventListener('touchend', function() {
+        scrollPage(document.documentElement, project3.offsetTop, 600);
+    });
+    
 });
 
 
 
 
-initialArrow.addEventListener('click', function() {
-    scrollPage(document.documentElement, project1.offsetTop, 600);
-});
-
-arrow1.addEventListener('click', function() {
-    scrollPage(document.documentElement, project2.offsetTop, 600);
-});
-
-arrow2.addEventListener('click', function() {
-    scrollPage(document.documentElement, project3.offsetTop, 600);
-});
 
 
 /* iPads Only */
