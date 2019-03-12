@@ -1,3 +1,9 @@
+let initialArrow = document.querySelector('.initial-arrow');
+let arrow1 = document.querySelector('.arrow1');
+let project1 = document.querySelector('#project1');
+let arrow2 = document.querySelector('.arrow2');
+let project2 = document.querySelector('#project2');
+let project3 = document.querySelector('#project3');
 
 function scrollPage(element, to, duration) {
     if (duration <= 0) return;
@@ -24,12 +30,6 @@ arrow2.addEventListener('click', function() {
 });
 
 
-let initialArrow = document.querySelector('.initial-arrow');
-let arrow1 = document.querySelector('.arrow1');
-let project1 = document.querySelector('#project1');
-let arrow2 = document.querySelector('.arrow2');
-let project2 = document.querySelector('#project2');
-let project3 = document.querySelector('#project3');
 
 initialArrow.addEventListener('touchstart', function() {
     scrollPage(document.documentElement, project1.offsetTop, 600);
@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* iPads Only */
 var isIpad = navigator.userAgent.indexOf("iPad") != -1 ;
+console.log(isIpad);
 let flip1Front = document.querySelector('.flip1-front .text');
 let flip2Front = document.querySelector('.flip2-front .text');
 let flip3Front = document.querySelector('.flip3-front .text');
