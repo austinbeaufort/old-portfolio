@@ -18,16 +18,14 @@ let arrow2 = document.querySelector('.arrow2');
 let project2 = document.querySelector('#project2');
 let project3 = document.querySelector('#project3');
 
-let tapInitialArrow = document.querySelector('.projectsButton');
-let tapInitialRegion = new ZingTouch.Region(tapInitialArrow);
-let tap = new ZingTouch.Tap({
-    numInputs: 1
-});
-tapInitialRegion.bind(tapInitialArrow, tap, function() {
+/* ---- MOBILE FUNCTIONALITY ----- */
+
+
+initialArrow.addEventListener('click', function() {
     scrollPage(document.documentElement, project1.offsetTop, 600);
 });
 
-initialArrow.addEventListener('click', function() {
+$('.initial-arrow').on('tap', function() {
     scrollPage(document.documentElement, project1.offsetTop, 600);
 });
 
