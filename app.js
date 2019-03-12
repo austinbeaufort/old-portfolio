@@ -31,6 +31,27 @@ let arrow2 = document.querySelector('.arrow2');
 let project2 = document.querySelector('#project2');
 let project3 = document.querySelector('#project3');
 
+initialArrow.addEventListener('touchstart', function() {
+    scrollPage(document.documentElement, project1.offsetTop, 600);
+});
+initialArrow.addEventListener('touchend', function() {
+    scrollPage(document.documentElement, project1.offsetTop, 600);
+});
+
+arrow1.addEventListener('touchstart', function() {
+    scrollPage(document.documentElement, project2.offsetTop, 600);
+});
+arrow1.addEventListener('touchend', function() {
+    scrollPage(document.documentElement, project2.offsetTop, 600);
+});
+
+arrow2.addEventListener('touchstart', function() {
+    scrollPage(document.documentElement, project3.offsetTop, 600);
+});
+arrow2.addEventListener('touchend', function() {
+    scrollPage(document.documentElement, project3.offsetTop, 600);
+});
+
 
 /* ----------FLIPCARDS ------------ */
 
@@ -51,27 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
     flip2.addEventListener('touchend', touch);
     flip3.addEventListener('touchstart', touch);
     flip3.addEventListener('touchend', touch);
-    initialArrow.addEventListener('touchstart', function() {
-        scrollPage(document.documentElement, project1.offsetTop, 600);
-    });
-    initialArrow.addEventListener('touchend', function() {
-        scrollPage(document.documentElement, project1.offsetTop, 600);
-    });
-    
-    arrow1.addEventListener('touchstart', function() {
-        scrollPage(document.documentElement, project2.offsetTop, 600);
-    });
-    arrow1.addEventListener('touchend', function() {
-        scrollPage(document.documentElement, project2.offsetTop, 600);
-    });
-    
-    arrow2.addEventListener('touchstart', function() {
-        scrollPage(document.documentElement, project3.offsetTop, 600);
-    });
-    arrow2.addEventListener('touchend', function() {
-        scrollPage(document.documentElement, project3.offsetTop, 600);
-    });
-    
 });
 
 
