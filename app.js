@@ -19,11 +19,13 @@ let project2 = document.querySelector('#project2');
 let project3 = document.querySelector('#project3');
 
 var clickEvent = function() {
-    if ('ontouchstart' in document.documentElement === true)
-      return 'touchstart';
-    else
-      return 'click';
-  };
+    if ('ontouchstart' in document.documentElement === true) {
+        console.log(`it's a touchscreen!!`);
+        return 'touchstart';
+    } else {
+        return 'click';
+    }
+};
 
 initialArrow.addEventListener(clickEvent(), function() {
     scrollPage(document.documentElement, project1.offsetTop, 600);
