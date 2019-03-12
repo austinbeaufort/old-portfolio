@@ -650,6 +650,7 @@ input[type="subject"] {
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    background: rgb(228, 228, 228);
 
 }
 
@@ -963,6 +964,17 @@ input[type="subject"] {
     .projectsButton h1 {
         font-size: 80px;
     }
+
+    .contact-form button {
+        background: rgb(228, 228, 228); 
+    }
+
+    .about-container {
+        display: block;
+        margin-top: -40px;
+        
+    }
+
   }
 
   @media only screen 
@@ -995,5 +1007,9 @@ input[type="subject"] {
 
     .flip-button {
         background:white;
+    }
+
+    .contact-form button {
+        background: rgb(228, 228, 228); 
     }
 }
