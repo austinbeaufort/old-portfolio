@@ -18,41 +18,31 @@ let arrow2 = document.querySelector('.arrow2');
 let project2 = document.querySelector('#project2');
 let project3 = document.querySelector('#project3');
 
-var clickEvent = function() {
-    if ('ontouchstart' in document.documentElement === true) {
-        console.log(`it's a touchscreen!!`);
-        return 'touchstart';
-    } else {
-        return 'click';
-    }
-};
 
-initialArrow.addEventListener(clickEvent(), function() {
+initialArrow.addEventListener('click', function() {
     scrollPage(document.documentElement, project1.offsetTop, 600);
 });
 
-initialArrow.addEventListener('touchend', function(event) {
-    event.preventDefault();
+initialArrow.addEventListener('touchstart', function() {
     scrollPage(document.documentElement, project1.offsetTop, 600);
 });
 
-arrow1.addEventListener(clickEvent(), function() {
+arrow1.addEventListener('click', function() {
     scrollPage(document.documentElement, project2.offsetTop, 600);
 });
 
-arrow1.addEventListener('touchend', function(event) {
-    event.preventDefault();
-    scrollPage(document.documentElement, project2.offsetTop, 600);
+arrow1.addEventListener('touchstart', function() {
+    scrollPage(document.documentElement, project1.offsetTop, 600);
 });
 
-arrow2.addEventListener(clickEvent(), function() {
+arrow2.addEventListener('click', function() {
     scrollPage(document.documentElement, project3.offsetTop, 600);
 });
 
-arrow2.addEventListener('touchend', function(event) {
-    event.preventDefault();
-    scrollPage(document.documentElement, project3.offsetTop, 600);
+arrow2.addEventListener('touchstart', function() {
+    scrollPage(document.documentElement, project1.offsetTop, 600);
 });
+
 
 
 
