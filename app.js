@@ -20,12 +20,7 @@ let project3 = document.querySelector('#project3');
 
 /* ---- MOBILE FUNCTIONALITY ----- */
 
-
 initialArrow.addEventListener('click', function() {
-    scrollPage(document.documentElement, project1.offsetTop, 600);
-});
-
-$('.arrow1').on('tap', function() {
     scrollPage(document.documentElement, project1.offsetTop, 600);
 });
 
@@ -33,15 +28,7 @@ arrow1.addEventListener('click', function() {
     scrollPage(document.documentElement, project2.offsetTop, 600);
 });
 
-$('.arrow1').on('tap', function() {
-    scrollPage(document.documentElement, project2.offsetTop, 600);
-});
-
 arrow2.addEventListener('click', function() {
-    scrollPage(document.documentElement, project3.offsetTop, 600);
-});
-
-$('.arrow2').on('tap', function() {
     scrollPage(document.documentElement, project3.offsetTop, 600);
 });
 
