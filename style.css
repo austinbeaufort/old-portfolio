@@ -18,6 +18,7 @@
 
 
 
+
 .home-container, #project1, #project2 {
     height: 100vh;
 }
@@ -552,6 +553,9 @@ header a:hover {
 
 .all-contacts {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contacts-container {
@@ -613,6 +617,7 @@ input[type="text"] {
     grid-column: 1 / 4;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    outline: none;
 }
 
 input[type="email"] {
@@ -622,6 +627,7 @@ input[type="email"] {
     grid-column: 1 / 4;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    outline: none;
 }
 
 input[type="subject"] {
@@ -631,6 +637,7 @@ input[type="subject"] {
     grid-column: 1 / 4;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    outline: none;
 }
 
 .contact-form textarea {
@@ -639,6 +646,7 @@ input[type="subject"] {
     padding-top: 2px;
     grid-column: 1 / 4;
     font-family: 'Muli', sans-serif;
+    outline: none;
 }
 
 .contact-form button {
@@ -919,6 +927,9 @@ input[type="subject"] {
 }
 
 @media (max-width: 717px) {
+    
+    /* --- Home Page --- */
+
     .background-container {
         background-image: url('./img/water.jpg');
     }
@@ -937,6 +948,162 @@ input[type="subject"] {
     .flip1, .flip3 {
         display: none;
     }
+
+    header .container {
+        grid-template-columns: auto;
+    }
+
+
+    header .logo {
+        display: none;
+    }
+    
+    header ul {
+        padding-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        float: none;
+        justify-content: center;
+        line-height: auto;
+        margin-top: -10px;
+    }
+
+    .home-container, #project1, #project2 {
+        height: 800px;
+    }
+    
+    .projectsButton h1 {
+        font-size: 30px;
+    }
+
+    .project .container {
+        padding-top: 15px;
+    }
+    
+    .project .fa-arrow-down, .project .fa-arrow-right {
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    
+    .project .fa-arrow-down:hover, .project .fa-arrow-right:hover {
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    
+    .project .container h1 {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    
+    .project .container img {
+        margin-bottom: 10px;
+        width: 320px;
+    }
+    
+    .project .container p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .project .container h2 {
+        font-size: 25px;
+    }   
+    .project .button {
+        padding: 7px 12px 7px 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .icon-bar i {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    /* --- About Page --- */
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-container .bio-paras {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .about-container .bio-paras p {
+        border-bottom: 1px solid gray;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .about-container .bio-paras .border-para {
+        border-left: none;
+        border-right: none;
+    }
+
+    .tools .tools-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tools .tools-container div {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .tools .tools-container h3 {
+        border-bottom: 1px solid grey;
+    }
+
+    .tools .skills {
+        border-left: none;
+        border-right: none;
+    }
+    .education .education-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-container .certifications {
+        border-left: none;
+        border-right: none;
+    }
+
+    .education .education-container h3 {
+        border-bottom: 1px solid grey;
+    }
+
+
+    .contacts .contacts-top h1 {
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contacts .contacts-top .phone {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    .contacts .form h1 {
+        font-size: 20px;
+    }
+
+    .contacts .form input, .contacts .form textarea {
+        width: 270px;
+    }
+
+    .contacts .form .contact-form{
+        width: 320px;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 7%;
+        margin-right: 3%;
+    }
+
 
 }
 
